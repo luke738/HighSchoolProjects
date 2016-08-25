@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<game>
+	<name>TestGame</name>
+	<currentplayer>luke738</currentplayer>
+	<round>1</round>
+	<togo>1</togo>
+	<continent id="1">
+		<name>TestCont</name>
+		<country id="254">
+			<name>TestA</name>
+			<type>inland</type>
+			<bases>air</bases>
+			<repeatables>
+				<oilrigs>1</oilrigs>
+				<specialforces>1</specialforces>
+				<nukes>1</nukes>
+			</repeatables>
+			<neighbors>TestE, TestF</neighbors>
+			<trooppoint>144, 126</trooppoint>
+			<basespoint>120, 140</basepoint>
+		</country>
+
+		<country id="253">
+			<name>TestB</name>
+			<type>coastal</type>
+			<bases>air, navy</bases>
+			<repeatables>
+				<oilrigs>1</oilrigs>
+				<specialforces>1</specialforces>
+				<nukes>1</nukes>
+			</repeatables>
+			<neighbors>TestA, TestD, TestF, TestH</neighbors>
+			<trooppoint>246, 312</trooppoint>
+			<basepoint>200, 350</basepoint>
+		</country>
+		<country id="252">
+			<name>TestC</name>
+			<type>coastal</type>
+			<bases/>
+			<repeatables/>
+			<neighbors>TestA, TestD, TestH, TestI</neighbors>
+			<trooppoint>422, 96</trooppoint>
+			<basepoint>390, 130</basepoint>
+		</country>
+		
+		<country id="251">
+			<name>TestD</name>
+			<type>coastal</type>
+			<bases/>
+			<repeatables/>
+			<neighbors>TestB, TestC, TestH</neighbors>
+			<trooppoint>472, 282</trooppoint>
+			<basepoint>435, 320</basepoint>
+		<owner>dracopolis</owner><troops id="1"><owner>dracopolis</owner><strength>1000</strength><type>owner</type></troops></country>
+		<country id="250">
+			<name>TestF</name>
+			<type>coastal</type>
+			<bases/>
+			<repeatables/>
+			<neighbors>TestA, TestB, TestC, TestE, TestG, TestH</neighbors>
+			<trooppoint>190, 170</trooppoint>
+			<basepoint>85, 130</basepoint>
+		</country>
+		<country id="249">
+			<name>TestE</name>
+			<type>coastal</type>
+			<bases/>
+			<repeatables/>
+			<neighbors>TestA, TestF</neighbors>
+			<trooppoint>85, 70</trooppoint>
+			<basepoint>195, 70</basepoint>
+		<owner>luke738</owner><troops id="1"><owner>luke738</owner><strength>1000</strength><type>owner</type></troops></country>
+		<country id="248">
+			<name>TestG</name>
+			<type>coastal</type>
+			<bases/>
+			<repeatables/>
+			<neighbors>TestF</neighbors>
+			<trooppoint>73, 259</trooppoint>
+			<basepoint>45, 285</basepoint>
+		</country>
+		<country id="247">
+			<name>TestH</name>
+			<type>coastal</type>
+			<bases/>
+			<repeatables/>
+			<neighbors>TestA, TestB, TestC, TestD</neighbors>
+			<trooppoint>302, 195</trooppoint>
+			<basepoint>280, 215</basepoint>
+		</country>
+		<country id="246">
+			<name>TestI</name>
+			<type>coastal</type>
+			<bases/>
+			<repeatables/>
+			<neighbors>TestC</neighbors>
+			<trooppoint>535, 65</trooppoint>
+			<basepoint>500, 90</basepoint>
+		</country>
+	</continent>
+
+	<players>
+		<max>4</max>
+		<player id="1" type="moderator">
+			<username>luke738</username>
+			<money>600</money>
+			<turnorder>1</turnorder>
+			<actions>3</actions>
+			<alliance>0</alliance>
+			<nonagpact/>
+			<color>0,255,0</color>
+		<capital>TestE</capital></player>
+
+	<alliances>
+		<alliance id="1">
+			<name>EHTO</name>
+			<members>luke738, ally1</members>
+		</alliance>
+	</alliances>
+</game>

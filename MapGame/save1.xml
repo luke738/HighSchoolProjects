@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<game>
+	<name>TestGame</name>
+	<currentplayer>ally1</currentplayer>
+	<round>1</round>
+	<togo>2</togo>
+	<continent id="1">
+		<name>TestCont</name>
+		<country id="254">
+			<name>TestA</name>
+			<type>coastal</type>
+			<owner>luke738</owner>
+			<bases>air, navy</bases>
+			<repeatables>
+				<oilrigs>1</oilrigs>
+				<specialforces>1</specialforces>
+				<nukes>1</nukes>
+			</repeatables>
+			<neighbors>TestB, TestC</neighbors>
+			<trooppoint>140, 124</trooppoint>
+		<troops id="1"><owner>luke738</owner><strength>800</strength><type>owner</type></troops></country>
+
+		<country id="253">
+			<name>TestB</name>
+			<type>coastal</type>
+			<bases>air, navy</bases>
+			<repeatables>
+				<oilrigs>1</oilrigs>
+				<specialforces>1</specialforces>
+				<nukes>1</nukes>
+			</repeatables>
+			<neighbors>TestA, TestD</neighbors>
+			<trooppoint>246, 312</trooppoint>
+		</country>
+
+		<country id="252">
+			<name>TestC</name>
+			<type>coastal</type>
+			<bases/>
+			<repeatables/>
+			<neighbors>TestA, TestD</neighbors>
+			<trooppoint>422, 96</trooppoint>
+		</country>
+		
+		<country id="251">
+			<name>TestD</name>
+			<type>coastal</type>
+			<owner>ally1</owner>
+			<bases/>
+			<repeatables/>
+			<neighbors>TestB, TestC</neighbors>
+			<trooppoint>472, 282</trooppoint>
+		<troops id="1"><owner>ally1</owner><strength>1000</strength><type>owner</type></troops></country>
+	</continent>
+
+	<players>
+		<max>4</max>
+		<player id="1" type="moderator">
+			<username>luke738</username>
+			<money>600</money>
+			<turnorder>1</turnorder>
+			<actions>0</actions>
+			<alliance>0</alliance>
+			<nonagpact/>
+			<color>0,255,0</color>
+			<password></password>
+		<capital>TestA</capital></player>
+		<player id="2" type="user">
+			<username>ally1</username>
+			<money>600</money>
+			<turnorder>2</turnorder>
+			<actions>2</actions>
+			<alliance>1</alliance>
+			<nonagpact/>
+			<color>0,0,255</color>
+			<password></password>
+		<capital>TestD</capital></player>
+	</players>
+
+	<alliances>
+		<alliance id="1">
+			<name>EHTO</name>
+			<members>luke738, ally1</members>
+		</alliance>
+	</alliances>
+</game>

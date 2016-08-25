@@ -1,0 +1,49 @@
+Game:
+1 Pixel.
+1: Current save, current player, round
+    R: 0, save is most recent
+       1, save is old
+    G: Current player ID number
+    BA: Round number, starts at B,A(0,0) and increases A sequentially until rollover.    
+ 
+Countries:
+13 pixels wide, A value for each pixel is country ID number, descending sequential from 254. First row is single pixel country count.
+1-4: Troops and their owners. Troop number stored in RG, owner in B.
+5: Buildings, traits, and ownership.
+    R: 0, No buildings
+       1, Naval base
+       2, Air base
+       3, Both Air and Naval base
+    G: 0, Land-locked
+       1, Ocean access
+    B: Owner's ID number
+6: Oil rigs, nukes, and special forces. Number of rigs in R, number of nukes in G, and number of special forces in B.
+7-9: Neighboring countries. Each component of RGB represents the ID number of a neighboring country. A value of 0 indicates no neighbor.
+10-15: Name. Maximum of 18 letters. 1-26 a-z, 27-52 A-Z. A value must be 255 for proper translation.
+
+Players:
+9 pixels wide. First row is single pixel player count.
+1: Player ID in R, money stored in BG, capital country ID in A.
+2: Player ID number, turn order, status, Alliance ID number
+    R: Player ID number
+    G: Player turn number
+    B: 0, alive
+       1, dead
+    A: Alliance ID number
+3-9: Password SHA224 hash
+
+Alliances:
+2 pixels wide. First row is single pixel alliance count.
+1: Player IDs in RGB, Alliance ID in A
+2: Player ID in R, Number of territories controlled in G, Alliance ID in BA.
+
+Ceasefires/NAPs:
+1 pixel. First row is single pixel ceasefire/NAP count.
+1: Player/Alliance IDs, turns remaining, type
+    RG: Player or Alliance ID numbers
+    B: Number of turns before end of ceasefire. 255 turns is treated as indefinite.
+    A: 0, Player/Player
+       1, Player/Alliance
+       2, Alliance/Player
+       3, Alliance/Alliance
+
