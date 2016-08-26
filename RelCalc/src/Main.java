@@ -3,14 +3,24 @@ import org.nevec.rjm.BigDecimalMath;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 
+/*A simple calculator that computes the relativistic kinetic energy of an object using the acceleration of the object over a distance.
+  Was intended to give a Wolfram-Alpha-like energy comparison past the point where Wolfram Alpha rounded velocity to 1c. No user input
+  provided as I just wanted to play with the math a bit.
+
+  Uses a BigDecimal math library by Richard J. Mathar found here: http://arxiv.org/abs/0908.3030
+ */
 public class Main
 {
     public static void main(String[] args)
     {
+        BigDecimal c = new BigDecimal("299792458"); //Speed of light
+
+        //Inputs to calculator
         BigDecimal mass = new BigDecimal(10);
-        BigDecimal c = new BigDecimal("299792458");
         BigDecimal distance = new BigDecimal("600");
         BigDecimal acceleration = new BigDecimal(8.7*Math.pow(10,21));
+
+        //Energy of various energetic events/objects.
         BigDecimal chicxulub = new BigDecimal(5*Math.pow(10,23));
         BigDecimal tsar = new BigDecimal(2.092*Math.pow(10,17));
         BigDecimal boy = new BigDecimal(6.3*Math.pow(10,13));
